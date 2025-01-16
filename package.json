@@ -1,0 +1,24 @@
+{
+  "name": "oranco",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "start.bat"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Apries406/oranco-web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Apries406/oranco-web/issues"
+  },
+  "homepage": "https://github.com/Apries406/oranco-web#readme",
+  "description": "",
+  "dependencies": {
+    "@nestjs/jwt": "^10.2.0"
+  }
+}
