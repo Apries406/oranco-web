@@ -30,4 +30,8 @@ export class DocumentsService {
       }
     }
   }
+
+  async findDocByDID(did: string) {
+    return this.documentsRepository.findOne({ where: { id: did } })
+  }
 }

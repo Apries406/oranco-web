@@ -9,6 +9,7 @@ import { DocumentsModule } from './documents/documents.module';
 import { Document } from './documents/entities/document.entities';
 import { APP_GUARD } from '@nestjs/core';
 import { LoginGuard } from './guard/login.guard';
+import { CollabModule } from './collab/collab.module';
 
 @Module({
   imports: [UsersModule,
@@ -24,6 +25,8 @@ import { LoginGuard } from './guard/login.guard';
       logging: true,
       connectorPackage: 'mysql2',
     }),
+    DocumentsModule,
+    CollabModule,
     JwtModule.registerAsync({
       global: true,
       useFactory() {
@@ -33,7 +36,7 @@ import { LoginGuard } from './guard/login.guard';
         }
       }
     }),
-    DocumentsModule,
+   
   ],
   controllers: [AppController],
   providers: [AppService],
